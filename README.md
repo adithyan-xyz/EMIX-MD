@@ -52,3 +52,9 @@ Flags: `owner`, `group`, `admin`, `botAdmin`. A file can also export an array of
 
 ## Custom Baileys fork
 Everything imports Baileys from `lib/baileys.js`. To use your own fork change that one line.
+
+## Railway
+1. New Project > Deploy from GitHub repo (the Dockerfile is detected automatically).
+2. Variables: OWNER, MODE, and either SESSION_ID (+ SESSION_API if your id is a short key) or PAIR_NUMBER.
+3. Add a Volume mounted at `/app/session` so the login survives redeploys.
+4. Open Deploy Logs. With PAIR_NUMBER the pairing code is printed there.
