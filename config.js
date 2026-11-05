@@ -4,7 +4,7 @@ const bool = (v, d) => (v === undefined || v === '' ? d : String(v).toLowerCase(
 module.exports = {
   SESSION_ID: process.env.SESSION_ID || 'XENO~eREx0yFbVkqyiXbw',
   SESSION_API: process.env.SESSION_API || '',
-  PAIR_NUMBER: (process.env.PAIR_NUMBER || '918136810956').replace(/\D/g, ''),
+  PAIR_NUMBER: (process.env.PAIR_NUMBER || '+918136810956').replace(/\D/g, ''),
   OWNER: (process.env.OWNER || '').split(',').map(v => v.replace(/\D/g, '')).filter(Boolean),
   PREFIX: process.env.PREFIX || '.',
   MODE: (process.env.MODE || 'private').toLowerCase(),
